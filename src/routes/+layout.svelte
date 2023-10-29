@@ -23,7 +23,7 @@
   >
     <button
       on:click={scrollToTop}
-      class="ml-auto rounded-full bg-slate-900 text-violet-40 px-3 sm:px-4 hover:bg-slate-800 curson-pointer"
+      class="ml-auto rounded-full aspect-square bg-slate-900 text-violet-40 px-3 sm:px-4 hover:bg-slate-800 curson-pointer"
     >
       <i class="fa-solid fa-arrow-up grid place-items-center aspect-square" />
     </button>

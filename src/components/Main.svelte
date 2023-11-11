@@ -1,5 +1,6 @@
 <script>
   import Step from "./Step.svelte";
+  import PdfViewer from "./PdfViewer.svelte";
 
   let steps = [
     {
@@ -221,5 +222,31 @@
       <p>Scroll to see more &rarr;</p>
     </div>
     <p class="mx-auto">So why not invest?</p>
+  </section>
+  <section
+    id="resume"
+    class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative items-center"
+  >
+    <div
+      class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-violet-700
+    after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-violet-700 py-10"
+    >
+      <PdfViewer
+        url="./files/resume.pdf"
+        showButtons={[]}
+        showBorder="false"
+        scale="1.32"
+      />
+      <a
+        href="files/resume.pdf"
+        target="_blank"
+        class="blueShadow relative overflow-hidden mx-16 xl:mx-48 lg:mx-48 md:mx-48 sm:mx-48 xs:mx-36 mt-5 px-3 py-3 group rounded-full bg-white text-slate-950"
+      >
+        <div
+          class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
+        />
+        <h4 class="relative z-9">Download Resume &darr;</h4>
+      </a>
+    </div>
   </section>
 </main>

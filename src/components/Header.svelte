@@ -10,6 +10,10 @@
       name: "About me",
       link: "#about",
     },
+    {
+      name: "Resume",
+      link: "#resume",
+    },
   ];
 </script>
 

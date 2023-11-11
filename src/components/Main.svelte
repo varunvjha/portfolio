@@ -3,16 +3,18 @@
 
   let steps = [
     {
-      name: "Souljames Store",
-      icon: "fa-solid fa-cart-shopping",
+      name: "MedConnect",
+      icon: "fa-solid fa-user-doctor",
+      href: "https://github.com/varunvjha/MedConnect",
     },
     {
-      name: "Ultimate Todos",
-      icon: "fa-solid fa-list-check",
+      name: "Airbnb iOS Clone",
+      icon: "fa-brands fa-airbnb",
+      href: "https://github.com/varunvjha/airbnb-clone-ios",
     },
     {
-      name: "Pokedex",
-      icon: "fa-solid fa-diagram-project",
+      name: "AI-Enabled Invoice Management App",
+      icon: "fa-solid fa-file-invoice",
     },
   ];
 
@@ -49,8 +51,9 @@
         <br />Full Stack <span class="poppins text-violet-400">Developer</span>
       </h2>
       <p class="text-base sm:text-lg md:text-xl">
-        My <span class="poppins text-violet-400">favourite tech</span> includes JavaScript
-        (Svelte), Tailwind-CSS, Node.js + Express.js & PostgreSQL or Firebase/Firestore!
+        My <span class="poppins text-violet-400">favourite tech</span> includes Android
+        (Kotlin & Java), Node.js + Express.js & MySQL, Flutter, iOS (SwiftUI), JavaScript
+        (Svelte), Tailwind-CSS!
       </p>
       <a
         href="#"
@@ -87,29 +90,31 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
       <Step step={steps[0]}>
         <p>
-          Smoljames Store is a merchandising store created with <strong
+          Medconnect is a healthcare appointment booking app developed in <strong
             class="text-violet-400"
-            >Next.js Commerce.js Stripe & Node.js + Express.js!</strong
-          > Commerce.js is a product CMS and Stripe is used for all transaction handling.
+            >Android with Kotlin, Coroutines, LiveData, ViewModel and RoomDB!</strong
+          > enabling patients to seamlessly login, browse slots and book appointments,
+          and doctors to login and view upcoming appointments and details.
         </p>
       </Step>
       <Step step={steps[1]}>
         <p>
-          Ultimate Todos is a Full Stack <strong class="text-violet-400"
-            >Next.js, Node.js + Express.js & Firebase</strong
-          > CRUD application that allows a user to login, manage a tidy and efficacious
-          todo list, and persist this information across all devices.
+          It's an iOS app mirroring Airbnb's functionality where I've utilized <strong
+            class="text-violet-400">Swift, SwiftUI, MapKit & Firebase</strong
+          > authentication and seamless user experience. In this app, I implemented
+          location search, booking, and authentication features.
         </p>
       </Step>
       <Step step={steps[2]}>
         <p>
-          The Pokedex is a <strong class="text-violet-400"
-            >SvelteKit & Tailwind-CSS</strong
+          Developed an ML model in Python using scikit-learn and other libraries
+          to predict invoice payment dates. This predictive prowess seamlessly
+          integrates into a full-stack Invoice Management Application, crafted
+          with <strong class="text-violet-400"
+            >HTML, CSS, JavaScript, and Java.</strong
           >
-          web application hosted on
-          <strong class="text-violet-400">Netlify</strong>, that consumes and
-          caches the <strong class="text-violet-400">Pokemon API</strong> to display
-          all Pokemon information. Gotta catch em all!
+          The application empowers users with CRUD functionalities for easy and efficient
+          invoice data management.
         </p>
       </Step>
     </div>

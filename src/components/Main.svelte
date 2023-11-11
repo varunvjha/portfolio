@@ -41,7 +41,7 @@
 
   let PdfViewer;
   onMount(async () => {
-    const module = await import("svelte-pdf");
+    const module = await import("./PdfViewer.svelte");
     PdfViewer = module.default;
   });
 </script>

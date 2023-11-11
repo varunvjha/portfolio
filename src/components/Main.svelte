@@ -1,6 +1,5 @@
 <script>
   import Step from "./Step.svelte";
-  import PdfViewer from "./PdfViewer.svelte";
 
   let steps = [
     {
@@ -37,6 +36,14 @@
         "Communication is key and it's a paramount value of mine. I believe in transparency and constructive communication above all else. This helps me develop deep relationships and ensures my effectiveness and productivity in any work space with any team.",
     },
   ];
+
+  import { onMount } from "svelte";
+
+  let PdfViewer;
+  onMount(async () => {
+    const module = await import("svelte-pdf");
+    PdfViewer = module.default;
+  });
 </script>
 
 <main class="flex flex-col flex-1 p-4">
@@ -231,12 +238,15 @@
       class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-violet-700
     after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-violet-700 py-10"
     >
-      <PdfViewer
-        url="./files/resume.pdf"
-        showButtons={[]}
-        showBorder="false"
-        scale="1.32"
-      />
+      {#if PdfViewer}
+        <PdfViewer
+          url="./files/resume.pdf"
+          showButtons={[]}
+          showBorder="false"
+          scale="1.32"
+          workerUrl="/pdf.worker.js"
+        />
+      {/if}
       <a
         href="files/resume.pdf"
         target="_blank"
